@@ -1,6 +1,6 @@
 <?php
 function get_mysql($biao) {
-    $mysql=array ('mysql'=>'localhost','name'=>'one_chainwon_co','password'=>'r2GnnBTpTN');
+    $mysql=array ('mysql'=>'数据库地址（默认localhost）','name'=>'数据库名称','password'=>'数据库密码');
     return $mysql[$biao];
 }
 function get_mysql_options($biao) {
