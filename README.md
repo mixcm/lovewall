@@ -1,4 +1,6 @@
-## Apache
+## 伪静态
+
+#### Apache
 
     <IfModule mod_rewrite.c>
     RewriteEngine On
@@ -8,7 +10,7 @@
     RewriteRule ^mous/(.*)$ /index.php?mous=$1&page=1
     </IfModule>
 
-## Nginx
+#### Nginx
 
 	rewrite ^/mous/page/(.*)$ /index.php?mous=&page=$1;
 	rewrite ^/mous/(.*)/page/(.*)$ /index.php?mous=$1&page=$2;
