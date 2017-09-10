@@ -13,6 +13,12 @@ function  do_html_head ($title){
 	echo '        <link href="//cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.css" rel="stylesheet">'."\n";
 }
 function  do_html_footer (){
+    echo '<div class="copyright container">&copy; '
+    .date("Y")
+    .' <a href="//'.$_SERVER['HTTP_HOST'].'">'.get_mysql_options("title").'</a>'
+    .' Powered By '
+    .'<a href="https://github.com/mixcm/lovewall" target="_blank">觅思树洞</a>'
+    .'</div>';
 	echo "\n";
 }
 function  do_html_content ($page,$mous){

@@ -180,7 +180,6 @@ body {
     border-radius: 4px 4px 0 0;
     line-height: 27px;
     height: 106px;
-    text-indent: 2em;
     display: -webkit-box;
     -webkit-box-orient: vertical;
     -webkit-line-clamp: 4;
@@ -257,8 +256,8 @@ body {
     margin-right: 0;
 }
 #content .list-pages {
-    margin-bottom: 30px;
     text-align: center;
+    margin-bottom: 80px;
 }
 #content .list-pages a:first-child, #content .list-pages a:last-child {
     width: auto;
@@ -331,6 +330,18 @@ body {
     margin: 0 auto;
     display: block;
     border: 1px solid #cbd5dd;
+}
+#content .copyright {
+    line-height: 50px;
+    text-align: center;
+    width: 100%;
+    background: #fff;
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, .1);
+    position: fixed;
+    bottom: 0;
+}
+#content .copyright a {
+    color: #5b6064;
 }
 @media screen and (max-width:720px) {
     .container {

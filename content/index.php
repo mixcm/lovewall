@@ -19,6 +19,7 @@
                 get_require_content("pages/".Pages);
             }
             ?>
+            <?php do_html_footer(); ?>
         </div>
         <div id="footer">
             <script src="//cdn.bootcss.com/jquery/2.2.4/jquery.min.js"></script>
