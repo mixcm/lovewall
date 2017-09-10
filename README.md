@@ -17,3 +17,13 @@
 	rewrite ^/mous/(.*)/page/(.*)$ /index.php?mous=$1&page=$2;
 	rewrite ^/mous/(.*)$ /index.php?mous=$1&page=1;
 	rewrite ^/pages/(.*)$ /index.php?pages=$1;
+
+## 数据库说明
+
+#### 导入数据库
+先将根目录内的 options.sql 和 contents.sql 导入数据库
+
+#### 连接数据库
+在 /require/function.php 的第三行更改为自己的数据库信息
+
+    $mysql=array ('mysql'=>'数据库地址（默认localhost）','name'=>'数据库名称','password'=>'数据库密码');
