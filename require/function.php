@@ -15,7 +15,11 @@ function get_require_function($name) {
     echo "\n";
 }
 function get_require_content($name) {
-    require_once(Root_Path."/content/".$name.".php");
+    if(file_exists(Root_Path."/content/".$name.".php")){
+        require_once(Root_Path."/content/".$name.".php");
+    }else{
+        require_once(Root_Path."/content/pages/404.php");
+    }
     echo "\n";
 }
 function get_static_css ($name) {

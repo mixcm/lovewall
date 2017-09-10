@@ -12,10 +12,17 @@
             <?php get_require_content("menu"); ?>
         </div>
         <div id="content">
-            <?php get_require_content("content"); ?>
+            <?php 
+            if(Pages==""){
+                get_require_content("content");
+            }else{
+                get_require_content("pages/".Pages);
+            }
+            ?>
         </div>
         <div id="footer">
-            <?php do_html_footer(); ?>
+            <script src="//cdn.bootcss.com/jquery/2.2.4/jquery.min.js"></script>
+            <?php echo get_static_js ("i"); ?>
         </div>
     </body>
 

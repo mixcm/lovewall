@@ -44,7 +44,7 @@ function  do_html_content ($page,$mous){
 				echo '<img class="avatar" src="/static/img/mous.jpg">';
 				echo '<p class="name">匿名</p>';
 			}
-			echo '<p class="date">'.date("Y年m月d日",$row["date"]).'</p>';
+			echo '<p class="date">'.date("n月j日 H:i",$row["date"]).'</p>';
 			echo '</div>';
 			echo '</div>';
 		}
@@ -71,7 +71,7 @@ function  do_html_content ($page,$mous){
 				echo '<img class="avatar" src="/static/img/mous.jpg">';
 				echo '<p class="name">匿名</p>';
 			}
-			echo '<p class="date">'.date("Y年m月d日",$row["date"]).'</p>';
+			echo '<p class="date">'.date("n月j日 H:i",$row["date"]).'</p>';
 			echo '</div>';
 			echo '</div>';
 		}

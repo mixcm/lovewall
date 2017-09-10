@@ -280,6 +280,58 @@ body {
     background: #F4A7B9;
     box-shadow: 0 0 8px #F4A7B9;
 }
+#content .pages {
+    margin-top: 20px;
+    background: #fff;
+    box-shadow: 0 0 8px rgba(0, 0, 0, .1);
+    padding: 20px;
+    border-radius: 4px;
+    margin-bottom: 50px;
+}
+#content .pages h2 {
+	margin-top: 0;
+	margin-bottom: 8px;
+	font-size: 0.8em;
+	color: rgb(90,95,105);
+	font-weight: normal;
+	position: relative;
+}
+#content .pages h2:after {
+	content: " *";
+	color: red;
+	font-size: 24px;
+	margin-left: 2px;
+	position: absolute;
+}
+#content .pages input, #content .pages textarea {
+    transition: border-color .35s;
+	width: 100%;
+    margin-bottom: 15px;
+    outline: none;
+    padding: 8px;
+    border-radius: 2px;
+    border: 1px solid #cbd5dd;
+    box-sizing: border-box;
+}
+#content .pages input:focus, #content .pages textarea:focus {
+	border-color: rgb(90,95,105);
+}
+#content .pages input[type=radio] {
+    width: auto;
+    margin-left: 0;
+}
+#content .pages label {
+    margin-right: 10px;
+}
+#content .pages button {
+    padding: 6px 20px 7px 20px;
+    border-radius: 2px;
+    background: #fff;
+    color: rgb(90,95,105);
+    margin: 0 auto;
+    display: block;
+    border: 1px solid #cbd5dd;
+}
 @media screen and (max-width:720px) {
     .container {
         width: calc(100% - 40px);
