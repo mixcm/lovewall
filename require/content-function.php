@@ -13,13 +13,21 @@ function  do_html_head ($title){
 	echo '        <link href="//cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.css" rel="stylesheet">'."\n";
 }
 function  do_html_footer (){
-    echo '<div class="copyright container">&copy; '
-    .date("Y")
-    .' <a href="//'.$_SERVER['HTTP_HOST'].'">'.get_mysql_options("title").'</a>'
-    .' Powered By '
-    .'<a href="https://github.com/mixcm/lovewall" target="_blank">觅思树洞</a>'
-    .'</div>';
+	/* 请不要更改此处内容 */
+	echo '<div class="copyright container">&copy; '
+	/* 请不要更改此处内容 */
+	.date("Y")
+	/* 请不要更改此处内容 */
+	.' <a href="//'.$_SERVER['HTTP_HOST'].'">'.get_mysql_options("title").'</a>'
+	/* 请不要更改此处内容 */
+	.' Powered By '
+	/* 请不要更改此处内容 */
+	.'<a href="https://github.com/mixcm/lovewall" target="_blank">觅思树洞</a>'
+	/* 请不要更改此处内容 */
+	.'</div>';
+	/* 请不要更改此处内容 */
 	echo "\n";
+	/* 请不要更改此处内容 */
 }
 function  do_html_content ($page,$mous){
 	$conn=new mysqli(get_mysql ("mysql"),get_mysql ("name"),get_mysql ("password"),get_mysql ("name"));

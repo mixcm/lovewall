@@ -19,7 +19,9 @@
                 get_require_content("pages/".Pages);
             }
             ?>
+            <!-- 请不要更改此处内容 -->
             <?php do_html_footer(); ?>
+            <!-- 请不要更改此处内容 -->
         </div>
         <div id="footer">
             <script src="//cdn.bootcss.com/jquery/2.2.4/jquery.min.js"></script>
