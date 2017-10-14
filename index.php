@@ -1,4 +1,7 @@
 <?php
+// 关闭报错
+error_reporting(0);
+
 // 声明根目录 
 define("Root_Path",dirname(__FILE__));
 
