@@ -1,7 +1,8 @@
 <?php
+//因为不是面向对象写的 所以这里我就用了global 让$conf变成全局的变量
 function get_mysql($biao) {
-    $mysql=array ('mysql'=>'localhost','name'=>'root','password'=>'','dbname'=>'lovewall');
-    return $mysql[$biao];
+    global $conf;
+    return $conf[$biao];
 }
 
 //这里设置了dbname为lovewall 本来这里是name 和数据库用户名相同了 以后还得把下面的数据库连接分离出来单独封装
