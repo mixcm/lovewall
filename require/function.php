@@ -1,10 +1,13 @@
 <?php
 function get_mysql($biao) {
-    $mysql=array ('mysql'=>'数据库地址（默认localhost）','name'=>'数据库名称','password'=>'数据库密码');
+    $mysql=array ('mysql'=>'localhost','name'=>'root','password'=>'','dbname'=>'lovewall');
     return $mysql[$biao];
 }
+
+//这里设置了dbname为lovewall 本来这里是name 和数据库用户名相同了 以后还得把下面的数据库连接分离出来单独封装
 function get_mysql_options($biao) {
-    $conn=new mysqli(get_mysql("mysql"),get_mysql("name"),get_mysql("password"),get_mysql("name"));
+    $conn=new mysqli(get_mysql("mysql"),get_mysql("name"),get_mysql("password"),get_mysql("dbname"));
+    $conn->query("SET NAMES UTF8");
 	$sql="SELECT * FROM options WHERE name='$biao'";
 	$result=$conn->query ($sql);
     $row=$result->fetch_assoc ();

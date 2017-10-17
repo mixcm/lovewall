@@ -17,6 +17,9 @@ define("Pages",$_GET["pages"]);
 // 载入函数表
 require_once("require/function.php");
 
+//声明字符集
+header("Content-type: text/html; charset=utf-8");
+
 // 载入主体
 require_once("content/index.php");
 ?>
