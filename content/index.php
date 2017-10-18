@@ -5,7 +5,6 @@
         <?php do_html_head(""); ?>
         <?php echo get_static_css ("i"); ?>
     </head>
-    
     <body>
         <div id="header">
             <?php get_require_content("header"); ?>

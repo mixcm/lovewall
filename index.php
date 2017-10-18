@@ -14,8 +14,14 @@ define("Page",$_GET["page"]);
 // 需载入的页面类型
 define("Pages",$_GET["pages"]);
 
+//引入数据库配置文件
+$conf = include 'require/conf.php';
+
 // 载入函数表
 require_once("require/function.php");
+
+//声明字符集
+header("Content-type: text/html; charset=utf-8");
 
 // 载入主体
 require_once("content/index.php");

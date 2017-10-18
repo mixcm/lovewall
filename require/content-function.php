@@ -30,7 +30,8 @@ function  do_html_footer (){
 	/* 请不要更改此处内容 */
 }
 function  do_html_content ($page,$mous){
-	$conn=new mysqli(get_mysql ("mysql"),get_mysql ("name"),get_mysql ("password"),get_mysql ("name"));
+	$conn=new mysqli(get_mysql ("mysql"),get_mysql ("name"),get_mysql ("password"),get_mysql ("dbname"));
+	$conn->query("SET NAMES UTF8");//防止乱码
 	if($page==""){
 	    $limit=0;
 	}else{
@@ -100,7 +101,7 @@ function  do_html_pages ($page,$mous){
     }
     
     // 计算全部页数
-	$conn=new mysqli(get_mysql ("mysql"),get_mysql ("name"),get_mysql ("password"),get_mysql ("name"));
+	$conn=new mysqli(get_mysql ("mysql"),get_mysql ("name"),get_mysql ("password"),get_mysql ("dbname"));
 	$x=0;
 	if ($mous==""){
 	    $sql="SELECT * FROM contents";
