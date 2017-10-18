@@ -23,11 +23,11 @@
       <div class="row">
         <table class="table table-hover">
           <tr>
-            <th>标题</th>
-            <th>标题</th>
-            <th>标题</th>
-            <th>标题</th>
-            <th>标题</th>
+            <th>id</th>
+            <th>单身狗</th>
+            <th>单身狗的咆哮</th>
+            <th>单身狗的qq</th>
+            <th>单身狗的狗粮</th>
           </tr>
 <?php
       include 'page.php';
