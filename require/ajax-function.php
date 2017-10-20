@@ -20,7 +20,8 @@ function insert_mysql_show ($sex,$mous,$say,$name,$qq){
         if($qq != ""){
             if(preg_match("/^[1-9]\d{4,10}$/",$qq)){
                 if($name != ""){
-                    $conn=new mysqli(get_mysql("mysql"),get_mysql("name"),get_mysql("password"),get_mysql("name"));
+                    $conn=new mysqli(get_mysql("mysql"),get_mysql("name"),get_mysql("password"),get_mysql("dbname"));
+                    $conn->query("SET NAMES UTF8");//防止乱码
                     $stmt=$conn->prepare ("INSERT INTO contents (date,text,sex,qq,ip,mous,name) VALUES(?,?,?,?,?,?,?)");
 		            $stmt->bind_param ("sssssss",time(),$say,$sex,$qq,get_client_ip (),$mous,$name);
 		            $stmt->execute ();

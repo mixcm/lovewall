@@ -28,6 +28,29 @@ body {
     position: relative;
     overflow: hidden;
 }
+/*这里加了爱心的动画*/
+@keyframes heartbeat {
+    0% {
+        -webkit-transform:scale(0.9);
+        transform:scale(0.9)
+    }
+    50%{
+    	-webkit-transform:rotate()(10deg);
+        transform:rotate(10deg)
+    }
+    60%{
+    	-webkit-transform:rotate()(-20deg);
+        transform:rotate(-20deg)
+    }
+    70%{
+    	-webkit-transform:rotate()(10deg);
+        transform:rotate(10deg)
+    }
+    to {
+        -webkit-transform:scale(1);
+        transform:scale(1)
+    }
+}
 #header .header .heart:before {
     content:"\f004";
     color: #fff;
@@ -37,6 +60,8 @@ body {
 #header .header .heart {
     position: relative;
     z-index: 10;
+    -webkit-animation: 1.8s both heartbeat infinite;
+    animation: 1.8s both heartbeat infinite;
 }
 #header .header .beat {
     position: absolute;
