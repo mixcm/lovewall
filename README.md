@@ -25,7 +25,7 @@
 先将根目录内的 options.sql 和 contents.sql 导入数据库
 
 #### 连接数据库
-在 /require/conf.php 更改为自己的数据库信息
+在 /require/function.php 第三行 更改为自己的数据库信息
 
 	'mysql'=>'localhost',	//数据库地址
 	'name'=>'root',		//数据库登录名
