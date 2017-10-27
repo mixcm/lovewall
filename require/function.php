@@ -1,7 +1,11 @@
 <?php
-//因为不是面向对象写的 所以这里我就用了global 让$conf变成全局的变量
 function get_mysql($biao) {
-    global $conf;
+    $conf = array(
+        'mysql'=>'mysql.coding.io:3306',//数据库配置
+		'name'=>'user-PUNwYskfJx',
+		'password'=>'M;bA?nhJ:eX!/--]Tu2H',
+		'dbname'=>'db-jnXWJH4KAs',
+    );
     return $conf[$biao];
 }
 
@@ -27,9 +31,9 @@ function get_require_content($name) {
     echo "\n";
 }
 function get_static_css ($name) {
-    return '<link href="//'.$_SERVER['HTTP_HOST'].'/static/css/'.$name.'.css" rel="stylesheet">'."\n";
+    return '<link href="//'.$_SERVER['HTTP_HOST'].'/lovewall/static/css/'.$name.'.css" rel="stylesheet">'."\n";
 }
 function get_static_js ($name) {
-    return '<script src="//'.$_SERVER['HTTP_HOST'].'/static/js/'.$name.'.js"></script>'."\n";
+    return '<script src="//'.$_SERVER['HTTP_HOST'].'/lovewall/static/js/'.$name.'.js"></script>'."\n";
 }
 ?>
