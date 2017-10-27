@@ -25,7 +25,7 @@
         <div id="footer">
             <script src="//cdn.bootcss.com/jquery/2.2.4/jquery.min.js"></script>
             <?php echo get_static_js ("i"); ?>
+            <script src="/static/js/main.js"></script>
         </div>
     </body>
-
 </html>
